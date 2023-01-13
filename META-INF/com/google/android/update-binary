@@ -466,10 +466,10 @@ if [ -f banner ]; then
 fi;
 
 ui_print "**********************************";
-ui_print "Welcome To Jura Tempest Federation";
-ui_print "              Rimuru              ";
-ui_print "            Demon Slime           ";
-ui_print "          Tempest Family          ";
+ui_print "Welcome To Jura Priv Federation";
+ui_print "              Rimoro              ";
+ui_print "            Santoni               ";
+ui_print "          Priv                    ";
 ui_print "**********************************";
 
 if [ -f version ]; then
@@ -480,15 +480,15 @@ fi;
 
 ui_print " ";
 ui_print "*****************************************";
-ui_print "RRRRRRR R RRRRRRR R     R RRRRRRR R     R";
+ui_print "RRRRRRR R RRRRRRR RRRRRRR RRRRRRR RRRRRRR";
 ui_print "R     R R R  R  R R     R R     R R     R";
 ui_print "R     R R R  R  R R     R R     R R     R";
 ui_print "RRRRRRR R R  R  R R     R RRRRRRR R     R";
 ui_print "R R     R R  R  R R     R R R     R     R";
 ui_print "R   R   R R  R  R R     R R   R   R     R";
 ui_print "R     R R R  R  R RRRRRRR R     R RRRRRRR";
-ui_print "                TEMPEST                  ";
-ui_print "************RIDWAN ADI CAHYONO***********";
+ui_print "                   PRIV                  ";
+ui_print "************MOHAMMAD  IQBAL**************";
 ui_print "*****************************************";
 
 if [ -e /dev/block/bootdevice/by-name/boot ]; then
@@ -499,7 +499,7 @@ if [ -e /dev/block/bootdevice/by-name/boot ]; then
 	fi
 fi
 
-ui_print "- Installing Rimuru Tempest...";
+ui_print "- Installing Rimoro Priv...";
 
 CORE=$($BB grep -oE 'ak.*core.sh' anykernel.sh);
 [ -f tools/$CORE ] || $BB ln -s $AKHOME/tools/ak*-core.sh $AKHOME/tools/$CORE;
@@ -517,4 +517,4 @@ if [ "$(file_getprop anykernel.sh do.cleanup)" == 1 ]; then
   cleanup;
 fi;
 
-ui_print " " " " "Done Flashing Rimuru Tempest";
+ui_print " " " " "Done Flashing Rimoro Priv";
